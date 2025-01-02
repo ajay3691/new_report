@@ -1,0 +1,119 @@
+/* Navbar.css */
+
+/* Constrain the height of the navbar */
+.navbar {
+    background: linear-gradient(to right, #f5f3f3, #6b5b95, #88d8b0, #ff6f61); /* Gradient background */
+    height: 60px; /* Fixed height for the navbar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and toggle button */
+    padding: 0 15px; /* Add padding for better spacing */
+}
+
+/* Logo container alignment */
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Full height of the navbar */
+}
+
+.logo {
+    width: 180px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 0; /* No left margin */
+    margin-top: 6px;
+}
+
+/* Ensure the navbar links are centered and fit within the navbar */
+.navbar-nav {
+    flex: 1; /* Allow nav items to stretch and center */
+    display: flex;
+    justify-content: center; /* Center nav items */
+    height: 100%; /* Full height of the navbar */
+}
+
+/* Navbar links */
+.nav-link {
+    color: #fff; /* White text color */
+    font-weight: bold; /* Highlight the text */
+}
+
+.nav-link:hover {
+    color: #ffeb3b; /* Highlight color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.navbar-toggler {
+    border: none; /* Remove border */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White toggle icon */
+    width: 30px; /* Icon width */
+    height: 3px; /* Bar height */
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-toggler-icon::before, .navbar-toggler-icon::after {
+    content: '';
+    background-color: #fff; /* White bars */
+    width: 30px; /* Bar width */
+    height: 3px; /* Bar height */
+    display: block;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+    top: -8px; /* Position the top bar */
+}
+
+.navbar-toggler-icon::after {
+    top: 8px; /* Position the bottom bar */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Keep items in a row on small screens */
+        justify-content: space-between; /* Ensure space between logo and toggle button */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .logo-container {
+        order: 1; /* Logo will be on the left on small screens */
+        width: auto; /* Auto width for logo container */
+        justify-content: flex-start; /* Align logo to the left */
+    }
+
+    .logo {
+        width: 120px; /* Smaller logo on mobile */
+    }
+
+    .navbar-toggler {
+        order: 2; /* Toggle button will be on the right on small screens */
+        align-self: flex-end; /* Align toggle button to the right */
+    }
+    .navbar-nav {
+        order: 3; /* Nav items will be below the logo and toggle button on small screens */
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center nav items */
+        margin-top: 10px; /* Space between logo and nav items */
+    }
+
+    .nav-link {
+        padding: 10px 0; /* Add padding for better touch targets */
+    }
+
+    .navbar-toggler-icon {
+        width: 25px; /* Smaller icon width */
+        height: 2px; /* Smaller bar height */
+    }
+
+    .navbar-toggler-icon::before, .navbar-toggler-icon::after {
+        width: 25px; /* Smaller bar width */
+        height: 2px; /* Smaller bar height */
+    }
+}

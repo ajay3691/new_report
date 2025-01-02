@@ -1,0 +1,377 @@
+{
+  "Employees": [
+    {
+      "firstname": "Tagore",
+      "lastname": "Kodamanchili",
+      "gender": "Male",
+      "Age": 23,
+      "employid": 7,
+      "email": "tagore1357@gmail.com",
+      "joiningdate": "2022-07-02",
+      "jobrole": "developer",
+      "password": "55467143",
+      "address": "dvp",
+      "jobtitle": "IOT",
+      "mobileno": "9912568440",
+      "bloodgroup": "O+",
+      "dob": "2001-08-22",
+      "profilepic": "",
+      "AlternativeMobileNo": "1256844099",
+      "AdharNo": "123456789123",
+      "PanNo": "ABC12333",
+      "EmployWorkmode": "Remote",
+      "Employwork": "Full Time",
+      "Bankname": "HDFC Bank",
+      "AccountNumber": "1234567899",
+      "IFSCcode": "SBI12355",
+      "AccountType": "Salary account",
+      "id": 1
+    },
+    {
+      "firstname": "Premchand",
+      "lastname": "Kodamanchili",
+      "gender": "Male",
+      "Age": 22,
+      "employid": 11,
+      "email": "tagore1357@gmail.com",
+      "joiningdate": "2024-01-19",
+      "jobrole": "Aplications",
+      "password": "50020418",
+      "address": "dvp",
+      "jobtitle": "developer",
+      "mobileno": "9912568440",
+      "bloodgroup": "O+",
+      "dob": "2024-01-05",
+      "profilepic": "",
+      "AlternativeMobileNo": "9934526774",
+      "AdharNo": "145467363636",
+      "PanNo": "77gthh7",
+      "EmployWorkmode": "Office",
+      "Employwork": "Full Time",
+      "Bankname": "HDFC Bank",
+      "AccountNumber": "5324354354353",
+      "IFSCcode": "gfhgfyt4",
+      "AccountType": "Salary account",
+      "id": 4
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "gender": "",
+      "Age": null,
+      "employid": null,
+      "email": "",
+      "joiningdate": "",
+      "jobrole": "",
+      "password": "l0mfcf4o",
+      "address": "",
+      "jobtitle": "",
+      "mobileno": "",
+      "bloodgroup": "",
+      "dob": "",
+      "profilepic": "",
+      "AlternativeMobileNo": "",
+      "AdharNo": "",
+      "PanNo": "",
+      "EmployWorkmode": "",
+      "Employwork": "",
+      "Bankname": "",
+      "AccountNumber": "",
+      "IFSCcode": "",
+      "AccountType": "",
+      "TimeStamp": 1706523679875,
+      "id": 5
+    }
+  ],
+  "Attendance": [
+    {
+      "2024": [
+        {
+          "firstname": "Tagore",
+          "employeeid": 11,
+          "id": 1
+        }
+      ]
+    }
+  ],
+  "Tasks": [
+    {
+      "firstname": "Tagore",
+      "lastname": "Kodamanchili",
+      "employid": 11,
+      "jobrole": "maps",
+      "status": "Completed",
+      "date": "2023-11-27",
+      "id": 1
+    },
+    {
+      "firstname": "Tagore",
+      "lastname": "Kodamanchili",
+      "employid": 11,
+      "jobrole": "Api",
+      "status": "Pending",
+      "date": "2023-11-28",
+      "id": 2
+    },
+    {
+      "firstname": "Tagore",
+      "lastname": "Kodamanchili",
+      "employid": 11,
+      "jobrole": "Maps",
+      "status": "Completed",
+      "date": "2023-12-02",
+      "id": 4
+    },
+    {
+      "firstname": "Tagore",
+      "lastname": "Kodamanchili",
+      "employid": 11,
+      "jobrole": "Api Integration",
+      "status": "Completed",
+      "date": "2023-12-01",
+      "id": 5
+    }
+  ],
+  "Departments": [
+    {
+      "departmentname": "IOT",
+      "departmentHead": "Sai",
+      "TotallEmployees": "5",
+      "id": 1
+    },
+    {
+      "departmentname": "Application",
+      "departmentHead": "Prem",
+      "TotallEmployees": "5",
+      "id": 2
+    },
+    {
+      "departmentname": "Marketing",
+      "departmentHead": "Joseph",
+      "TotallEmployees": "3",
+      "id": 3
+    }
+  ],
+  "Jobrequirement": [
+    {
+      "jobposition": "Developer",
+      "Skills": "HTML,CSS,React,react-native",
+      "qualification": "Any Degree",
+      "salary": "3.6 LPA",
+      "availability": "Full Time",
+      "relevantExperience": "2 Years",
+      "id": 1
+    },
+    {
+      "jobposition": "Java",
+      "Skills": "Java and Node J.s",
+      "qualification": "Any Degree",
+      "salary": "5LPA",
+      "availability": "Full Time",
+      "relevantExperience": "3 Years",
+      "id": 2
+    },
+    {
+      "jobposition": "Developer",
+      "Skills": "Html and Css",
+      "qualification": "MSC",
+      "salary": "3LPA",
+      "availability": "FUll time",
+      "relevantExperience": "2 years",
+      "id": 3
+    }
+  ],
+  "Expenses": [
+    {
+      "item": "Laptop",
+      "purchasefrom": "Flipkart",
+      "purchasedate": "2024-01-04",
+      "purchaseby": "Sathish",
+      "Amount": "2000",
+      "paidby": "Google Pay",
+      "Status": "Paid",
+      "id": 1
+    },
+    {
+      "item": "Chairs",
+      "purchasefrom": "Flipkart",
+      "purchasedate": "2024-01-04",
+      "purchaseby": "Sai",
+      "Amount": "2000",
+      "paidby": "Phone Pay",
+      "Status": "Paid",
+      "id": 2
+    },
+    {
+      "item": "Books",
+      "purchasefrom": "Flipkart",
+      "purchasedate": "2024-01-04",
+      "purchaseby": "Razik",
+      "Amount": "2000",
+      "paidby": "Phone Pay",
+      "Status": "Paid",
+      "id": 3
+    },
+    {
+      "item": "Laptop",
+      "purchasefrom": "Flipkart",
+      "purchasedate": "2024-01-04",
+      "purchaseby": "Shobana",
+      "Amount": "2000",
+      "paidby": "Phone Pay",
+      "Status": "Paid",
+      "id": 4
+    }
+  ],
+  "Invoices": [
+    {
+      "invoiceNumber": "00001",
+      "clientName": "Sai",
+      "createDate": "2024-01-17",
+      "dueDate": "2024-01-17",
+      "amount": "200000",
+      "status": "Paid",
+      "id": 1
+    },
+    {
+      "invoiceNumber": "00002",
+      "clientName": "Prem",
+      "createDate": "2024-01-17",
+      "dueDate": "2024-01-17",
+      "amount": "200000",
+      "status": "Pending",
+      "id": 2
+    }
+  ],
+  "Projects": [
+    {
+      "manager": "joseph",
+      "totalemployes": 6,
+      "projectlead": "tagore",
+      "projectname": "Tmtl",
+      "id": 1,
+      "startdate": "02-08-2023",
+      "status": "Done",
+      "description": "This is Eicher Project"
+    },
+    {
+      "manager": "Maps",
+      "totalemployes": "5",
+      "projectlead": "Kodamanchili",
+      "projectname": "Hr Management",
+      "startdate": "02-08-2023",
+      "status": "Done",
+      "description": "This is Hr Management",
+      "id": 2
+    }
+  ],
+  "Holidays": [
+    {
+      "id": 1,
+      "date": "01-Jan-2024",
+      "day": "Monday",
+      "Holiday": "New Year"
+    }
+  ],
+  "Payroll": [
+    {
+      "name": "Tagore",
+      "Roll": "developer",
+      "Salary": "15000.00",
+      "paySlip": "View",
+      "Status": "Paid",
+      "profilepic": "",
+      "month": "January 2024",
+      "Insurance": "1530.00",
+      "Basic": "9000.00",
+      "HouseRent": "3001.00",
+      "coneyancePay": "1500.00",
+      "othersPay": "1499.00",
+      "accNumber": "1234567891234",
+      "id": 1
+    },
+    {
+      "name": "Premchand",
+      "Roll": "Aplications",
+      "Salary": "60000.00",
+      "paySlip": "View",
+      "Status": "Paid",
+      "profilepic": "",
+      "month": "January 2024",
+      "Insurance": "2000.00",
+      "Basic": "40000.00",
+      "HouseRent": "10000.00",
+      "coneyancePay": "5000.00",
+      "othersPay": "5000.00",
+      "accNumber": "5324354354353",
+      "id": 2
+    }
+  ],
+  "Notifications": [
+    {
+      "msg": "Employee Record Deleted",
+      "name": "admin",
+      "id": 1
+    },
+    {
+      "msg": "Employee Record Deleted",
+      "name": "admin",
+      "id": 2
+    },
+    {
+      "msg": "New Employee Registered",
+      "name": "admin",
+      "id": 3
+    },
+    {
+      "msg": "Employee Record Deleted",
+      "name": "admin",
+      "id": 4
+    },
+    {
+      "msg": "New Employee Registered",
+      "name": "admin",
+      "id": 5
+    },
+    {
+      "msg": "Employee Record Deleted",
+      "name": "admin",
+      "id": 6
+    },
+    {
+      "msg": "Employee Record Deleted",
+      "name": "admin",
+      "id": 7
+    },
+    {
+      "msg": "Employee Record Deleted",
+      "name": "admin",
+      "id": 8
+    },
+    {
+      "msg": "Employee Record Deleted",
+      "name": "admin",
+      "id": 9
+    },
+    {
+      "msg": "Employee Record Deleted",
+      "name": "admin",
+      "id": 10
+    },
+    {
+      "msg": "Employee Record Deleted",
+      "name": "admin",
+      "id": 11
+    },
+    {
+      "msg": "New Employee Registered",
+      "name": "admin",
+      "id": 12
+    },
+    {
+      "msg": "Employee Record Deleted",
+      "name": "admin",
+      "id": 13
+    }
+  ]
+}

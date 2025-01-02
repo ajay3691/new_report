@@ -1,0 +1,21 @@
+.justify{
+    justify-content: space-around;
+    align-items:center;
+}
+.scroll{
+    overflow: scroll;
+    background-color: #78C775;
+}
+
+.workbtn{
+    background-color: #2C5D75;
+    color: #fff;
+    border-radius: 20px;
+    width: 30%;
+}
+.workbtn:hover{
+    background-color: #2C5D75;
+    color: #fff;
+    border-radius: 20px;
+    width:30%;
+}

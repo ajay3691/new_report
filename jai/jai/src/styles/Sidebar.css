@@ -1,0 +1,55 @@
+/* Sidebar.css */
+.sidebar {
+    background-color: rgb(11, 12, 67);
+    height: 100vh;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .navbar__link--active {
+    background-color: aqua;
+    color: black;
+}
+
+.sidebar .logo {
+    position: relative;
+    margin: 20% auto;
+    height: 65px;
+    display: block;
+    background-color: red;
+}
+
+.sub_nav {
+    background-color: rgb(11, 12, 67);
+    border-bottom-right-radius: 5px;
+    border-bottom: 1px solid gainsboro;
+    clip-path: polygon(41% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media only screen and (max-width: 639px) {
+    .nav_hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        margin-top: 0;
+    }
+    .sub_nav {
+        clip-path: none;
+    }
+}

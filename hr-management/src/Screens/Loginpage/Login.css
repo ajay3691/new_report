@@ -1,0 +1,72 @@
+.LoginText {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+
+.loginBtn {
+    background-color: #fff;
+    color: #244E96;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.loginBtn:hover {
+    background-color: #fff;
+    color: #244E96;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.lablecolor {
+    color: #fff;
+}
+
+.borderRadius {
+    border-radius: 10px;
+}
+
+.focusHide:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.focusHide {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.input-with-icon input::placeholder {
+    font-family: "Font Awesome 5 Free", Arial, sans-serif;
+    font-weight: 900;
+    /* Ensures the icon is bold */
+    content: "\f007";
+    /* Unicode for the Font Awesome icon */
+}
+
+.input-group-text {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    border-radius: 1px;
+    background-color: #fff;
+    padding: 0px;
+}
+
+.boxshadow {
+    /* box-shadow: 5px 5px 5px 5px lightblue; */
+    /* box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1),
+        4px 0px 10px rgba(0, 0, 0, 0.1),
+        0px -4px 10px rgba(0, 0, 0, 0.1),
+        -4px 0px 10px rgba(0, 0, 0, 0.1);
+}

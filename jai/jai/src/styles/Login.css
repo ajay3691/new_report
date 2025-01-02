@@ -1,0 +1,31 @@
+/* src/styles/Login.css */
+
+.login-container {
+    height: 100vh; /* Full viewport height */
+
+    align-items: center;
+    justify-content: center;
+    background-color: #c9ced5; /* Optional background color */
+}
+
+.logo {
+    max-width: 200px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: #ecdada; /* White background color for the card */
+    border: 1px solid #dee2e6; /* Light border color for the card */
+    border-radius: 0.5rem; /* Rounded corners for the card */
+}
+
+.login-input {
+    background-color: #e6eaef; /* Light background color for input fields */
+    border-color: #87a3bf; /* Border color for input fields */
+    border-radius: 0.25rem; /* Rounded corners for input fields */
+}
+
+.login-input:focus {
+    border-color: #666f7c; /* Highlight border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(204, 210, 220, 0.25); /* Highlight shadow on focus */
+}
