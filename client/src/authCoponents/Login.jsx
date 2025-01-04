@@ -1,141 +1,31 @@
 import React, { useContext, useState } from "react";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
+import back from '../img/back/13.png'
+import logo from '../img/logo/logo_bg_r.png'
   
 function Login() {
   const navigate = useNavigate();
-  /* const [name, setName] = useState("");
-  const [password, setPassword] = useState("");
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-  const [passwordhide, setpasswordhide] = useState(true); */
-  /* const handleSubmit = (event) => {
-    event.preventDefault();
-    if (name === "" && password === "") {
-      handleOpen();
-    } else if (name === "Admin" && password === "admin@123") {
-      const item = {
-        first_name: "Admin",
-        profilepic: "",
-        email: "admin@123",
-      };
-      localStorage.setItem("login", JSON.stringify(item));
-      setUserName(item);
-      navigate("/DashBoard");
-    } else {
-      FetchData("Employees").then((res) => {
-        res.forEach((item) => {
-          if (item.Office_Mail === name && item.password === password) {
-            let storeItem = {
-              first_name: item.first_name,
-              profilepic: item.profilepic,
-              email: item.email,
-            };
-            setUserName(item);
-            localStorage.setItem("login", JSON.stringify(storeItem));
-            navigate("/Userwork");
-          } else {
-            handleOpen();
-          }
-        });
-      });
-    }
-  }; */
 
   return (
-    // <div className="bgg d-flex justify-content-around align-items-center">
-    //   <div className="col-6 text-center">
-    //     <img
-    //       src={require("../../Assets/thingsalivelogo.png")}
-    //       className="w-50 h-15"
-    //       alt="Things alive logo"
-    //     />
-    //   </div>
-    //   <div className="col-6">
-    //     <div className="w-55 py-4 border border-white borderRadius">
-    //       <p className="LoginText text-center">Login</p>
-    //       <form onSubmit={handleSubmit}>
-    //         <div className="px-5">
-    //           <label className="form-label lablecolor">Name:</label>
-    //           <input
-    //             type="text"
-    //             name="name"
-    //             className="form-control"
-    //             value={name}
-    //             onChange={(e) => {
-    //               setName(e.target.value);
-    //             }}
-    //           />
-    //         </div>
-    //         <div className="pt-20 px-5">
-    //           <label className="form-label lablecolor">password:</label>
-    //           <div className="input-group">
-    //             <input
-    //               type={passwordhide ? "password" : "text"}
-    //               className="form-control"
-    //               name="password"
-    //               value={password}
-    //               onChange={(e) => {
-    //                 setPassword(e.target.value);
-    //               }}
-    //             />
-    //             <span className="input-group-text">
-    //               {passwordhide ? (
-    //                 <BsEyeSlashFill
-    //                   onClick={() => {
-    //                     setpasswordhide(false);
-    //                   }}
-    //                 />
-    //               ) : (
-    //                 <BsEyeFill
-    //                   onClick={() => {
-    //                     setpasswordhide(true);
-    //                   }}
-    //                 />
-    //               )}
-    //             </span>
-    //           </div>
-    //         </div>
-    //         <div className="text-center pt-60">
-    //           <button type="submit" className="btn mb-3 loginBtn">
-    //             Submit
-    //           </button>
-    //         </div>
-    //       </form>
-    //     </div>
-    //     <Modal open={open} onClose={handleClose}>
-    //       <Modal.Header>
-    //         <Modal.Title>Login Failed</Modal.Title>
-    //       </Modal.Header>
-    //       <Modal.Body>
-    //         <p>Please Check Password or Name</p>
-    //       </Modal.Body>
-    //       <Modal.Footer>
-    //         <Button
-    //           onClick={handleClose}
-    //           style={{ backgroundColor: "#1EB0DF", color: "#fff" }}
-    //         >
-    //           Ok
-    //         </Button>
-    //         <Button
-    //           onClick={handleClose}
-    //           appearance="subtle"
-    //           style={{ backgroundColor: "#1EB0DF", color: "#fff" }}
-    //         >
-    //           Cancel
-    //         </Button>
-    //       </Modal.Footer>
-    //     </Modal>
-    //   </div>
-    // </div>
+    <div
+    className="w-100 row d-flex align-items-center justify-content-center  mainlog"
+    style={{
+       /*  backgroundImage: `url(${back})`,  */ 
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      height: "100vh",
+      width: "100vw",
+      overflow: "hidden", // Prevent scrolling
+    }}
+  >
     <div className="w-100 row  d-flex align-items-center justify-content-center" style={{ height: '100vh'}}>
-      <div className="boxshadow h-80 w-80 m-5 row">
-        <div className="col-6 d-flex align-items-center justify-content-center">
+      <div className="boxshadow h-80 w-80 m-5 row ">
+        <div className="col-6 d-flex align-items-center justify-content-center" >
           <img
-            src="https://picsum.photos/200/300"
+            src=/* "https://picsum.photos/200/300" */{logo}
             alt="example img"
-            // className="w-100 h-100"
+            className="w-40 h-30"
           />
         </div>
         <div className="col-6 h-100">
@@ -177,7 +67,7 @@ function Login() {
               </div>
             </div>
             <div className="mt-3">
-              <button type="button" class="btn btn-primary" 
+              <button type="button" class="btn loginBtn" 
               onClick={()=>{
                 navigate("/dashBoard");
               }}
@@ -186,6 +76,7 @@ function Login() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
