@@ -754,7 +754,7 @@
 .Nav_Item.rs-dropdown.rs-dropdown-placement-bottom-start.rs-dropdown-expand,
 .Nav_Item.rs-dropdown.rs-dropdown-placement-bottom-start.rs-dropdown-expand>.rs-dropdown-toggle.rs-sidenav-item {
   background-color:#34495e!important;
-  color: #000 !important;
+  color: #fff !important;
   border-radius: 5px !important;
   padding-bottom: 7px !important;
 }
@@ -770,3 +770,8 @@
   background-color:#0a7bed !important;
   border-radius: 5px;
 }
+/* .rs-sidenav-nav > .rs-dropdown .rs-dropdown-toggle {
+  color: #fff !important;
+  background-color: #34495e !important;
+}
+ */

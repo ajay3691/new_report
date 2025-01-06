@@ -78,3 +78,68 @@
     padding: 20px;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+  }
+
+  .mainlog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Modern gradient */
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .boxshadow {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    width: 60%;
+    height: 70%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .h-80 {
+    height: 80%;
+  }
+  
+  .w-80 {
+    width: 80%;
+  }
+  
+  @media (max-width: 768px) {
+    .boxshadow {
+      width: 90%; /* Adjust width for smaller screens */
+      height: auto;
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .boxshadow .col-6 {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .boxshadow .col-6 img {
+      width: 60%; /* Adjust logo size */
+      height: auto;
+    }
+  
+    .boxshadow .col-6:last-child {
+      margin-bottom: 0;
+    }
+  
+    .w-50 {
+      width: 100%; /* Ensure the login form takes full width */
+    }
+  }
+  
+
