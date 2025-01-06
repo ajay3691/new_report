@@ -35,7 +35,7 @@ function Login() {
         setUser(userData);
   
         // Navigate based on user type
-        if (userData.userType === "admin") {
+        if (userData.userType === "Admin") {
           navigate("/admin");
         } else if (userData.userType === "employee") {
           navigate("/employee");

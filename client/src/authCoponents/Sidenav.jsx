@@ -56,6 +56,7 @@ const Sidenavbar = () => {
                     width: expanded ? "240px" : "60px", // Maintain consistent width
                     backgroundColor: "#34495e", // Sidebar background color
                     transition: "width 0.3s", // Smooth transition
+                    
                 }}
             >
                 {/* 
