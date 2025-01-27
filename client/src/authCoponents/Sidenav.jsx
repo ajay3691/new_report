@@ -5,6 +5,7 @@ import GroupIcon from '@rsuite/icons/legacy/Group';
 import MagicIcon from '@rsuite/icons/legacy/Magic';
 import GearCircleIcon from '@rsuite/icons/legacy/GearCircle';
 import { Navigate, useNavigate } from "react-router-dom";
+import { History } from "@rsuite/icons"; // Import a relevant icon for history
 
 const Sidenavbar = () => {
     const navigate = useNavigate();
@@ -68,13 +69,13 @@ const Sidenavbar = () => {
                 >
                     <Sidenav.Body>
                         <Nav activeKey={activeKey} onSelect={(item) => { setActiveKey(item) }}>
-                            <Nav.Item eventKey="1" icon={<DashboardIcon />} className="Nav_Item">
+                            <Nav.Item eventKey="1" onClick={()=>{navigate("/admin")}} icon={<DashboardIcon />} className="Nav_Item">
                                 Dashboard
                             </Nav.Item>
-                            <Nav.Item eventKey="2" icon={<GroupIcon />} className="Nav_Item">
-                                User Group
+                            <Nav.Item eventKey="2" onClick={()=>{navigate("/employeeList")}} icon={<GroupIcon />} className="Nav_Item">
+                                Employees List
                             </Nav.Item>
-                            <Nav.Menu placement="rightStart" eventKey="3" title="Advanced" icon={<MagicIcon />}
+                            <Nav.Menu placement="rightStart" eventKey="3" title="Report History" icon={<History />}
                                 style={{
                                     color: expanded ? "#fff" : "#34495e",
                                     backgroundColor: expanded ? "#34495e" : "transparent",
@@ -85,19 +86,40 @@ const Sidenavbar = () => {
                                     //     setExpanded(false)
                                     // }
                                     navigate("/Geo");
-                                }} className="Nav_Item">Geo</Nav.Item>
+                                }} className="Nav_Item">Daily Task</Nav.Item>
                                 <Nav.Item eventKey="3-2" onClick={() => {
                                     // if (windowSize.width < 500) {
                                     //     setExpanded(false)
                                     // }
                                     navigate("/Device");
-                                }} className="Nav_Item">Devices</Nav.Item>
-                                <Nav.Item eventKey="3-3" className="Nav_Item">Loyalty</Nav.Item>
-                                <Nav.Item eventKey="3-4" className="Nav_Item">Visit Depth</Nav.Item>
+                                }} className="Nav_Item">Development report</Nav.Item>
+                                <Nav.Item eventKey="3-3" className="Nav_Item">IdCard report</Nav.Item>
+                                {/* <Nav.Item eventKey="3-4" className="Nav_Item">IdCard report</Nav.Item> */}
+                            </Nav.Menu>
+                            <Nav.Menu placement="rightStart" eventKey="4" title="Advanced" icon={<MagicIcon />}
+                                style={{
+                                    color: expanded ? "#fff" : "#34495e",
+                                    backgroundColor: expanded ? "#34495e" : "transparent",
+                                }}
+                            >
+                                <Nav.Item eventKey="4-1" onClick={() => {
+                                    // if (windowSize.width < 500) {
+                                    //     setExpanded(false)
+                                    // }
+                                    navigate("/Geo");
+                                }} className="Nav_Item">Designation</Nav.Item>
+                                <Nav.Item eventKey="4-2" onClick={() => {
+                                    // if (windowSize.width < 500) {
+                                    //     setExpanded(false)
+                                    // }
+                                    navigate("/Device");
+                                }} className="Nav_Item">Development report</Nav.Item>
+                                <Nav.Item eventKey="3-3" className="Nav_Item">IdCard report</Nav.Item>
+                                {/* <Nav.Item eventKey="3-4" className="Nav_Item">IdCard report</Nav.Item> */}
                             </Nav.Menu>
                             <Nav.Menu
                                 placement="rightStart"
-                                eventKey="4"
+                                eventKey="5"
                                 title="Settings"
                                 icon={<GearCircleIcon />}
                                 style={{
@@ -105,9 +127,9 @@ const Sidenavbar = () => {
                                     backgroundColor: expanded ? "#34495e" : "transparent",
                                 }}
                             >
-                                <Nav.Item eventKey="4-1">Applications</Nav.Item>
-                                <Nav.Item eventKey="4-2">Channels</Nav.Item>
-                                <Nav.Item eventKey="4-3">Versions</Nav.Item>
+                                <Nav.Item eventKey="5-1">Change Password</Nav.Item>
+                                <Nav.Item eventKey="5-2">Profile</Nav.Item>
+                                <Nav.Item eventKey="5-3">Lagout</Nav.Item>
                                 {/*  <Nav.Menu eventKey="4-5" title="Custom Action">
                                 <Nav.Item eventKey="4-5-1">Action Name</Nav.Item>
                                 <Nav.Item eventKey="4-5-2">Action Params</Nav.Item>

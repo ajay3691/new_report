@@ -10,6 +10,7 @@ import Login from './authCoponents/Login'
 import Sidenav from './authCoponents/Sidenav'
 import Admin from './authCoponents/Admin'
 import Employee from './authCoponents/Employee'
+import EmployeeList from './components/EmployeeList'
 
 //import Layout from "./Screens/Layout";
 
@@ -48,6 +49,7 @@ function App() {
       <Route path="/sidenav" element={<Sidenav />} />
       <Route path="/admin" element={<Admin />} />
       <Route path="/employee" element={<Employee />} />
+      <Route path="/employeeList" element={<EmployeeList />} />
       {/* <Route path="DashBoard" element={<DashBoard/>} />
       <Route path="/" element={<Layout />}>
         <Route path="DashBoard" element={<DashBoard />} />

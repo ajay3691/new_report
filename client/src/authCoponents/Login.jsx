@@ -14,8 +14,7 @@ function Login() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    // Clear error when component loads
-    setError("");
+     setError("");
   }, []);
   const handleLogin = async () => {
     try {
